@@ -33,3 +33,86 @@ function Header(){
       </header>
   )
 }
+
+function Footer() {
+  return(
+    <footer style={{backgroundColor: theme_color_1.backgroundColor}}>
+      <div className="form-div">
+        <form>
+          <h1>newsletter</h1>
+          <div className="input-div">
+            <input className="rounded" type="email" required="true" />     
+            <button className="rounded" type="submit">submit</button>
+          </div>
+        </form>
+        <SocialMedia />
+      </div>
+      <div className="ul-div">
+        <Uls  array={[
+          ["title 1", "link", "link", "link",],
+          ["title 2", "link", "link", "link",],
+          ["title 3", "link", "link", "link",]
+        ]}/>
+        <Mission />
+      </div>
+      <Copyright />
+    </footer>
+  )
+}
+
+// ######################### ULS COMPONENT ######################### //
+function Uls({array}){
+  return(
+    <>
+      {array.map((ul, ulindex) => (
+        <ul key={ulindex}>
+          {ul.map((item, index) =>(
+            index === 0 ? (
+              <h3 key={index}>{item}</h3>
+            ) : (
+              <li key={index}>{item}</li>
+            )
+          ))}
+        </ul>
+      ))}
+    </>
+  )
+}
+
+// ######################### SOCIAL MEDIA LINKS ######################### //
+function SocialMedia(){
+  return(
+    <ul className="socialmedia-div">
+      <li><img src='./img/social/youtube.png' alt=''/></li>
+      <li><img src='./img/social/twitter.png' alt=''/></li>
+      <li><img src='./img/social/instagram_4138124.png' alt=''/></li>
+      <li><img src='./img/social/facebook_5968764.png' alt=''/></li>
+      <li><img src='./img/social/discord_5968756.png' alt=''/></li>
+    </ul>
+  )
+}
+
+// ######################### COPYRIGHT SEKTION ######################### //
+function Copyright() {
+  return(
+    <div className='copyright-div' style={{borderTop: `1px solid ${theme_color_1.sekundColor}`,}}>
+      <span>&copy; {new Date().getFullYear()} {owner}</span>
+    </div>
+  )
+}
+
+// ######################### "OUR MISSION" DIV ######################### //
+function Mission() {
+  return(
+    <div className="mission-div">
+      <h2>our mission</h2>
+      <p>
+        this is a paragraph hehe hehe he hehe hehehe he hehe he hehehe 
+      </p>
+    </div>
+  )
+}
+
+
+export default App;
+
