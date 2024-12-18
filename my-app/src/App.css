@@ -50,3 +50,76 @@ header nav ul{
   align-items: center;
 }
 
+/* ######################## footer ######################## */
+footer{
+  padding: 50px 60px 20px 60px;
+  display: flex;
+  color: whitesmoke;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .ul-div{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+footer .ul-div ul{
+  list-style: none;
+}
+footer .ul-div ul li{
+  margin: 10px 0;
+}
+footer .mission-div{
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+}
+footer .form-div{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+footer .form-div h1{
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  width: 100%;
+}
+footer .form-div .input-div{
+  display: flex;
+} 
+footer .form-div button,
+footer .form-div input{
+  box-sizing: border-box;
+  padding: 15px;
+  border: none;
+}
+footer .form-div input{
+  outline: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+footer .form-div button{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+footer .socialmedia-div{
+  display: flex;
+  list-style: none;
+  padding: 30px 0;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .form-div .socialmedia-div img{
+  width: 40px;
+}
+footer .copyright-div{
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
