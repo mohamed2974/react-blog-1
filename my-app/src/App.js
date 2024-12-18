@@ -13,3 +13,23 @@ function App() {
     </div>
   );
 }
+function Header(){
+  return(
+      <header style={{
+        backgroundColor: theme_color_1.backgroundColor,
+        boxShadow: theme_color_1.sekundColorShadow,
+      }}>
+          <div className="logo-div">
+              <h1>logo</h1>
+          </div>
+          <nav>
+              <ul>
+                  <li>link</li>
+                  <li>link</li>
+                  <li>link</li>
+                  <li>link</li>
+              </ul>
+          </nav>
+      </header>
+  )
+}
