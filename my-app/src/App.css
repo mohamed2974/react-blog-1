@@ -25,3 +25,28 @@
 .App-link {
   color: rgb(97, 218, 251);
 }
+
+/* ######################## header ######################## */
+header{
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: whitesmoke;
+  position: relative;
+}
+header nav{
+  width: 30%;
+}
+header .logo-div{
+  width: 30%;
+}
+header nav ul{
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
