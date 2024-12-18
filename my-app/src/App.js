@@ -10,9 +10,12 @@ let owner ='Mohamed Emran'
 function App() {
   return (
     <div className="App">
+      <Header />
+      <Footer />
     </div>
   );
 }
+
 function Header(){
   return(
       <header style={{
