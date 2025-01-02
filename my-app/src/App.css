@@ -36,18 +36,13 @@ header{
   position: relative;
 }
 header nav{
-  width: 30%;
+  width: 40%;
 }
 header .logo-div{
   width: 30%;
 }
 header nav ul{
   height: 100%;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* ######################## footer ######################## */
@@ -59,29 +54,20 @@ footer{
   flex-wrap: wrap;
 }
 footer .ul-div{
-  width: 40%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
-  flex-wrap: wrap;
-}
-footer .ul-div ul{
-  list-style: none;
-}
-footer .ul-div ul li{
-  margin: 10px 0;
+  gap: 120px;
 }
 footer .mission-div{
-  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
-  width: 100%;
   padding: 0 20px;
+  width: 20%;
 }
 footer .form-div{
-  width: 40%;
+  padding-right: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 footer .form-div h1{
   margin-bottom: 20px;
@@ -90,6 +76,7 @@ footer .form-div h1{
 }
 footer .form-div .input-div{
   display: flex;
+  justify-content: center;
 } 
 footer .form-div button,
 footer .form-div input{
@@ -110,8 +97,8 @@ footer .socialmedia-div{
   display: flex;
   list-style: none;
   padding: 30px 0;
-  justify-content: space-between;
   width: 100%;
+  gap: 20px;
 }
 footer .form-div .socialmedia-div img{
   width: 40px;

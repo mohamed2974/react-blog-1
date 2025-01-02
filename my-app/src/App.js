@@ -1,12 +1,13 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/react-in-jsx-scope */
 import './App.css';
+import Uls from './components/Uls-component'
 
 let theme_color_1 = {
   backgroundColor: "#282c34",
   sekundColor: 'rgb(97, 218, 251)',
   sekundColorShadow: '0px 10px 16px rgba(97, 218, 251, 0.3)'
 }
+
+let currentTheme = theme_color_1
 
 let owner ='Mohamed Emran'
 function App() {
@@ -21,19 +22,14 @@ function App() {
 function Header(){
   return(
       <header style={{
-        backgroundColor: theme_color_1.backgroundColor,
-        boxShadow: theme_color_1.sekundColorShadow,
+        backgroundColor: currentTheme.backgroundColor,
+        boxShadow: currentTheme.sekundColorShadow,
       }}>
           <div className="logo-div">
               <h1>logo</h1>
           </div>
           <nav>
-              <ul>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
-                  <li>link</li>
-              </ul>
+              <Uls array={['home', 'servis', 'about', 'contact']} row={true}/>
           </nav>
       </header>
   )
@@ -41,7 +37,7 @@ function Header(){
 
 function Footer() {
   return(
-    <footer style={{backgroundColor: theme_color_1.backgroundColor}}>
+    <footer style={{backgroundColor: currentTheme.backgroundColor}}>
       <div className="form-div">
         <form>
           <h1>newsletter</h1>
@@ -52,37 +48,17 @@ function Footer() {
         </form>
         <SocialMedia />
       </div>
-      <div className="ul-div">
+      <Mission />
         <Uls  array={[
           ["title 1", "link", "link", "link",],
           ["title 2", "link", "link", "link",],
           ["title 3", "link", "link", "link",]
         ]}/>
-        <Mission />
-      </div>
       <Copyright />
     </footer>
   )
 }
 
-// ######################### ULS COMPONENT ######################### //
-function Uls({array}){
-  return(
-    <>
-      {array.map((ul, ulindex) => (
-        <ul key={ulindex}>
-          {ul.map((item, index) =>(
-            index === 0 ? (
-              <h3 key={index}>{item}</h3>
-            ) : (
-              <li key={index}>{item}</li>
-            )
-          ))}
-        </ul>
-      ))}
-    </>
-  )
-}
 
 // ######################### SOCIAL MEDIA LINKS ######################### //
 function SocialMedia(){
@@ -100,7 +76,7 @@ function SocialMedia(){
 // ######################### COPYRIGHT SEKTION ######################### //
 function Copyright() {
   return(
-    <div className='copyright-div' style={{borderTop: `1px solid ${theme_color_1.sekundColor}`,}}>
+    <div className='copyright-div' style={{borderTop: `1px solid ${currentTheme.sekundColor}`,}}>
       <span>&copy; {new Date().getFullYear()} {owner}</span>
     </div>
   )

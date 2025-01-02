@@ -1,0 +1,27 @@
+ul{
+    list-style: none;
+}
+
+/* if row = true */
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.row li{
+    padding: 0 10px;
+}
+
+/* else */
+.ul-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.column li{
+    margin: 10px 0;
+}
