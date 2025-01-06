@@ -1,13 +1,12 @@
 // ######################### ULS COMPONENT ######################### //
-import './css/Uls-css.css'
 
-export default function Uls({array, row}){
+export default function Uls({array, row, w}){
     if(row === true){
         array = array.slice().reverse()
         return(
-            <ul className="row">
+            <ul className={`flex justify-between flex-row-reverse ${w}`}>
             {array.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index} className='capitalize'>{item}</li>
             ))}
             </ul>
         )
