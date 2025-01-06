@@ -17,6 +17,9 @@ export default function DrawerMobileNavigation({array}) {
         <React.Fragment>
             <IconButton variant="plain" onClick={() => setOpen(true)} sx={{
                 color: 'white',
+                '&:hover': {
+                    color: '',
+                },
             }}>
                 <Menu />
             </IconButton>
