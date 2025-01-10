@@ -13,6 +13,11 @@ import Search from '@mui/icons-material/Search';
 
 export default function DrawerMobileNavigation({array}) {
     const [open, setOpen] = React.useState(false);
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
     return (
         <React.Fragment>
             <IconButton variant="plain" onClick={() => setOpen(true)} sx={{
@@ -82,11 +87,12 @@ export default function DrawerMobileNavigation({array}) {
                     sx={{
                         flex: 'none',
                         fontSize: 'xl',
-                        '& > div': { justifyContent: 'center' },
+                        '& > div': { justifyContent: 'center', margin: 0, padding: 0, },
+                        '& > div > a': {width: '100%', height: '100%', display: 'flex', textAlign: 'center', alignItems: 'center', justifyContent: 'center',}
                     }}
                 >
-                    {array.map((item) => (
-                        <ListItemButton sx={{ fontWeight: 'lg', textTransform: 'capitalize'}} key={item}>{item}</ListItemButton>
+                    {array.map((item, index) => (
+                        <ListItemButton onClick={handleClose} sx={{ fontWeight: 'lg', textTransform: 'capitalize'}} key={index}>{item}</ListItemButton>
                     ))}
                 </List>
             </Drawer>

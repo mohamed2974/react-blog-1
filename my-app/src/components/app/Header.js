@@ -1,13 +1,20 @@
 import Uls from '../Uls-component'
 import MobileNav from '../Mobile-navi'
+import { NavLink } from 'react-router-dom';
 
-let list = ['home', 'service', 'about', 'contact']
-
-let hoverEffectList = 'relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-left hover:after:scale-x-100 after:transition-transform after:duration-300'
+let hoverEffectNavList = 'relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-left hover:after:scale-x-100 after:transition-transform after:duration-300'
 
 export default function Header({currentTheme}){
+    
+    let list = [
+        <NavLink  to='/'>home</NavLink>, 
+        <NavLink  to='/service'>service</NavLink>, 
+        <NavLink  to='/about'>about</NavLink>, 
+        <NavLink  to='/contact'>contact</NavLink>
+    ]
+
     return(
-        <header className='w-full px-9 py-4 lg:px-20 lg:py-6 flex flex-row justify-between font-medium items-center' style={{
+        <header className='select-none w-full px-9 py-4 lg:px-20 lg:py-6 flex flex-row justify-between font-medium items-center' style={{
             backgroundColor: currentTheme.backgroundColor,
             boxShadow: currentTheme.sekundColorShadow,
             color: currentTheme.textColorLight
@@ -15,7 +22,7 @@ export default function Header({currentTheme}){
             <div className='lg:w-1/12'>
                 <h1 className='text-xl lg:text-2xl'>logo</h1>
             </div>
-            <Uls style={'hidden lg:flex lg:w-2/6'} listItemStyle={`${hoverEffectList}`} array={list} row={true}/>
+            <Uls style={'hidden lg:flex lg:w-2/6 '} listItemStyle={`${hoverEffectNavList} p-1`} array={list} row={true}/>
             <div className='w-1/5 flex justify-end lg:w-1/12 '>
                 <a href='/' className='hidden w-full lg:flex lg:items-center lg:justify-between'>
                     <span>Sign in</span> 
