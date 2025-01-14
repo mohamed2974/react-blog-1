@@ -1,10 +1,10 @@
 // ######################### "OUR MISSION" DIV ######################### //
 export default function Mission() {
     return(
-        <div className="mission-div">
+        <div>
             <h2>our mission</h2>
-            <p>
-                this is a paragraph hehe hehe he hehe hehehe he hehe he hehehe 
+            <p className="mt-4">
+                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             </p>
         </div>
     )

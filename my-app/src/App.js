@@ -6,9 +6,9 @@ import About from './pages/About';
 
 let theme_color_1 = {
   backgroundColor: "#282c34",
-  textColorLight: 'rgb(255, 255, 255)',
+  textColor: 'rgb(255, 255, 255)',
   sekundColor: '#61dafb',
-  sekundColorShadow: '0px 10px 16px rgba(97, 218, 251, 0.3)'
+  sekundColorShadow: 'rgba(97, 218, 251, 0.1) 0px 0px 20px 2px'
 }
 
 let owner ='Mohamed Emran'

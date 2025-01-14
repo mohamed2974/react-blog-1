@@ -1,13 +1,18 @@
-// ######################### SOCIAL MEDIA LINKS ######################### //s
+// ######################### SOCIAL MEDIA LINKS ######################### //
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-export default function SocialMedia(){
+export default function SocialMedia({style, imgStyle}){
     return(
-        <ul className="socialmedia-div">
-            <li><img src='./img/social/youtube.png' alt=''/></li>
-            <li><img src='./img/social/twitter.png' alt=''/></li>
-            <li><img src='./img/social/instagram_4138124.png' alt=''/></li>
-            <li><img src='./img/social/facebook_5968764.png' alt=''/></li>
-            <li><img src='./img/social/discord_5968756.png' alt=''/></li>
+        <ul className={style}>
+            <li className={imgStyle}><YouTubeIcon /></li>
+            <li className={imgStyle}><FacebookIcon /></li>
+            <li className={imgStyle}><TwitterIcon /></li>
+            <li className={imgStyle}><InstagramIcon /></li>
+            <li className={imgStyle}><LinkedInIcon /></li>
         </ul>
     )
 }

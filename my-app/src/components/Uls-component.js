@@ -13,14 +13,14 @@ export default function Uls({array, row, style, listItemStyle}){
     }
 
     return(
-        <div className="ul-div">
+        <div className={style}>
         {array.map((ul, ulindex) => (
-            <ul key={ulindex} className="column">
+            <ul key={ulindex}>
             {ul.map((item, index) =>(
                 index === 0 ? (
-                <h3 key={index}>{item}</h3>
+                <h2 key={index} className="font-bold">{item}</h2>
                 ) : (
-                <li key={index}>{item}</li>
+                <li key={index} className={listItemStyle}>{item}</li>
                 )
             ))}
             </ul>
