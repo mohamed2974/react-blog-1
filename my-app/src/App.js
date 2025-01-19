@@ -7,7 +7,7 @@ import About from './pages/About';
 let theme_color_1 = {
   backgroundColor: "#282c34",
   textColor: 'rgb(255, 255, 255)',
-  sekundColor: '#61dafb',
+  sekundColor: '#00a0cd',
   sekundColorShadow: 'rgba(97, 218, 251, 0.1) 0px 0px 20px 2px'
 }
 
@@ -15,14 +15,14 @@ let owner ='Mohamed Emran'
 
 function App() {
   return (
-    <div className="App">
+    <div className="font-sans">
       <Router>
-        <Header currentTheme={theme_color_1} />
+        <Header />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/About' element={<About />} />
         </Routes>
-        <Footer currentTheme={theme_color_1} owner={owner}/>
+        <Footer owner={owner}/>
       </Router>
     </div>
   );

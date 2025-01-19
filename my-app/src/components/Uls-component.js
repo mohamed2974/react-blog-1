@@ -4,7 +4,7 @@ export default function Uls({array, row, style, listItemStyle}){
     if(row === true){
         array = array.slice().reverse()
         return(
-            <ul className={`flex justify-between flex-row-reverse ${style}`}>
+            <ul className={`flex flex-row-reverse ${style}`}>
             {array.map((item, index) => (
                 <li key={index} className={`capitalize ${listItemStyle}`}>{item}</li>
             ))}
