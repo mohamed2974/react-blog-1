@@ -1,7 +1,7 @@
-import ServicesSec from "../components/ServicesSec"
-import Newsletter from "../components/NewsletterSec"
-import HeroSec from "../components/HeroSec"
-import InfosSec from "../components/InfosSec"
+import ServicesSec from "../components/sections/ServicesSec"
+import Newsletter from "../components/sections/NewsletterSec"
+import HeroSec from "../components/sections/HeroSec"
+import InfosSec from "../components/sections/InfosSec"
 
 export default function Home(){
     return(

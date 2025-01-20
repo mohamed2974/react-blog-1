@@ -13,7 +13,7 @@ export default function Footer({owner}) {
 
     const isMobileApp = Capacitor.isNativePlatform();
 
-    //* ######################### FOOTERSECTION MOBILE ######################### //
+    //mobile ######################### FOOTERSECTION MOBILE ######################### //
     if (isMobileApp) {
         let MobileList = []
         lists.forEach((list)=>{

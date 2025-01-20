@@ -17,7 +17,7 @@ export default function Header(){
         <NavLink  to='/about'>about</NavLink>, 
         <NavLink  to='/contact'>contact</NavLink>
     ]
-    //* ######################### HEROSECTION MOBILE ######################### //
+    //mobile ######################### HEROSECTION MOBILE ######################### //
     if (isMobileApp) {
         return(
             <HeroSection className='select-none px-7 py-4 w-full flex flex-col h-[70vh] relative overflow-hidden' style={{
@@ -64,7 +64,7 @@ export default function Header(){
     )
 }
 
-//* ######################### HEROSECTION COMPONENT ######################### //
+//supcom ######################### HEROSECTION COMPONENT ######################### //
 function HeroSection({children, style, className}){
     return(
         <section className={className} style={style}>
@@ -73,7 +73,7 @@ function HeroSection({children, style, className}){
     )
 }
 
-// * ######################### WAVES COMPONENT ######################### //
+//supcom ######################### WAVES COMPONENT ######################### //
 function Waves(){
     return(
         <div>
