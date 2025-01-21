@@ -2,7 +2,7 @@ import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 
 export default function Example() {
     return (
-        <div className="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-16">
+        <div className="relative isolate overflow-hidden bg-gray-800 py-16 sm:py-24 lg:py-16 container">
             <div className="mx-auto max-w-7xl px-4 md:px-20">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                     <div className="max-w-xl lg:max-w-lg">
@@ -26,7 +26,7 @@ export default function Example() {
                             />
                             <button
                                 type="submit"
-                                className="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                                className="flex-none rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                             >
                                 Subscribe
                             </button>

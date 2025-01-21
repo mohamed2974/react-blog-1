@@ -3,12 +3,14 @@ import { Capacitor } from '@capacitor/core';
 
 export default function HeroSec() {
     const isMobileApp = Capacitor.isNativePlatform();
+
+    //mobile ######################### HEROSECTION MOBILE ######################### //
     if (isMobileApp) {
         return 
     }
-
+    //* ######################### HEROSECTION WEB ######################### //
     return (
-        <div className="bg-[#282c34] text-white py-36 md:py-52"
+        <div className="bg-[#282c34] text-white py-36 md:py-52 container h-screen"
             style={{}}
         >
             <div className="container mx-auto px-6 text-center">
