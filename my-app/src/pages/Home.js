@@ -1,21 +1,42 @@
-import ServicesSec from "../components/sections/ServicesSec"
-import Newsletter from "../components/sections/NewsletterSec"
-import HeroSec from "../components/sections/HeroSec"
-import InfosSec from "../components/sections/InfosSec"
-import ToolsSec from "../components/sections/ToolsSec"
-import ProjectsSec from "../components/sections/ProjectsSec"
-import ContactSec from "../components/sections/ContactSec"
+import ServicesSec from "../components/content/ServicesSec"
+import Newsletter from "../components/content/NewsletterSec"
+import HeroSec from "../components/content/HeroSec"
+import InfosSec from "../components/content/InfosSec"
+import ToolsSec from "../components/content/ToolsSec"
+import ProjectsSec from "../components/content/ProjectsSec"
+import ContactSec from "../components/content/ContactSec"
+
+import { Capacitor } from '@capacitor/core';
+
+
 
 export default function Home(){
+    const isMobileApp = Capacitor.isNativePlatform()
+
+    //mobile ######################### HOME MOBILE ######################### //
+    if (isMobileApp){
+        return (
+            <>
+            <InfosSec />
+            <ToolsSec />
+            <ServicesSec />
+            <ProjectsSec />
+            <Newsletter />
+            <ContactSec />
+        </>
+        )
+    }
+
+    //* ######################### HOME WEB ######################### //
     return(
-        <div className="container">
+        <>
             <HeroSec />
             <InfosSec />
             <ToolsSec />
-            <Newsletter />
             <ServicesSec />
             <ProjectsSec />
+            <Newsletter />
             <ContactSec />
-        </div>
+        </>
     )
 }

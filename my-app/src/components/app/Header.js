@@ -1,9 +1,11 @@
 import Uls from '../Uls-component'
 import MobileNav from '../Mobile-navi'
+import HeroSec from '../content/HeroSec';
+
 import { NavLink } from 'react-router-dom';
 import { Capacitor } from '@capacitor/core';
-import Button from '@mui/material/Button';
 import Wave from 'react-wavify'
+
 
 
 let hoverEffectNavList = 'relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-left hover:after:scale-x-100 after:transition-transform after:duration-300'
@@ -17,10 +19,11 @@ export default function Header(){
         <NavLink  to='/about'>about</NavLink>, 
         <NavLink  to='/contact'>contact</NavLink>
     ]
+    
     //mobile ######################### HEROSECTION MOBILE ######################### //
     if (isMobileApp) {
         return(
-            <HeroSection className='select-none px-7 py-4 container flex flex-col h-[70vh] relative overflow-hidden' style={{
+            <div className='select-none px-7 py-4  flex flex-col h-screen relative overflow-hidden' style={{
                 backgroundColor: '#282c34',
                 color: 'rgb(255, 255, 255)',
             }}>
@@ -28,18 +31,14 @@ export default function Header(){
                     <h1 className='text-xl'>Logo</h1>
                     <MobileNav array={list}/>
                 </div>
-                <div className='h-full flex flex-col justify-center items-center text-center z-10'>
-                    <h1 className='text-4xl'>Welcome to our App</h1>
-                    <p className='text-xs my-5 px-3 text-slate-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.</p>
-                    <Button variant="contained" sx={{backgroundColor: '#00a0cd'}}>Services</Button>
-                </div>
+                <HeroSec />
                 <Waves />
-            </HeroSection>
+            </div>
         )
     }
     //* ######################### HEADER WEB ######################### //
     return(
-        <header className='flex flex-row justify-between font-medium items-center select-none px-4 py-4 container md:w-11/12 fixed md:px-11 md:mt-3 md:left-1/2 md:transform md:-translate-x-1/2 md:rounded-full' style={{
+        <header className='flex flex-row justify-between font-medium items-center select-none px-4 py-4 w-full md:w-11/12 fixed md:px-11 md:mt-3 md:left-1/2 md:transform md:-translate-x-1/2 md:rounded-full' style={{
             backgroundColor: '#282c34',
             boxShadow: 'rgba(97, 218, 251, 0.1) 0px 0px 20px 2px',
             color: 'rgb(255, 255, 255)',
@@ -64,14 +63,6 @@ export default function Header(){
     )
 }
 
-//supcom ######################### HEROSECTION COMPONENT ######################### //
-function HeroSection({children, style, className}){
-    return(
-        <section className={className} style={style}>
-            {children}
-        </section>
-    )
-}
 
 //supcom ######################### WAVES COMPONENT ######################### //
 function Waves(){
@@ -79,7 +70,7 @@ function Waves(){
         <div>
             <div className='absolute left-0 bottom-0 w-full opacity-70'>
                 <Wave
-                    fill="#023047"
+                    fill="#1b3b5f"
                     paused={false}
                     style={{ display: 'flex'}}
                     options={{
@@ -93,7 +84,7 @@ function Waves(){
             <div className='absolute left-0 bottom-0 w-full opacity-30'>
                 <Wave
                     style={{ display: 'flex'}}
-                    fill="#219ebc"
+                    fill="#345d7e"
                     paused={false}
                     options={{
                         height: 40,
@@ -106,7 +97,7 @@ function Waves(){
             <div className='absolute left-0 bottom-0 w-full opacity-20'>
                 <Wave
                     style={{ display: 'flex'}}
-                    fill="#8ecae6"
+                    fill="#567c9b"
                     paused={false}
                     options={{
                         height: 45,

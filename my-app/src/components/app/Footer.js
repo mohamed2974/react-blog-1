@@ -34,7 +34,7 @@ export default function Footer({owner}) {
 
     //* ######################### FOOTER WEB ######################### //
     return(
-    <footer className='px-4 lg:px-11 py-14 lg:py-16 select-none container' style={{
+    <footer className='px-4 lg:px-11 py-14 lg:py-16 select-none' style={{
         backgroundColor: '#282c34', 
         color: 'rgb(255, 255, 255)'
     }}>

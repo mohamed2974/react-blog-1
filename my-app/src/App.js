@@ -4,14 +4,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 
-let theme_color_1 = {
-  backgroundColor: "#282c34",
-  textColor: 'rgb(255, 255, 255)',
-  sekundColor: '#00a0cd',
-  sekundColorShadow: 'rgba(97, 218, 251, 0.1) 0px 0px 20px 2px'
-}
+import owner from "./global/owner"
 
-let owner ='Mohamed Emran'
+// let theme_color_1 = {
+//   backgroundColor: "#282c34",
+//   textColor: 'rgb(255, 255, 255)',
+//   sekundColor: '#00a0cd',
+//   sekundColorShadow: 'rgba(97, 218, 251, 0.1) 0px 0px 20px 2px'
+// }
+
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/About' element={<About />} />
         </Routes>
-        <Footer owner={owner}/>
+        <Footer owner={owner.fullName}/>
       </Router>
     </div>
   );
