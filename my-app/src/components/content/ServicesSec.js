@@ -29,13 +29,13 @@ const Services = [
 
 export default function ServicesSec(){
     return (
-        <section className="select-none px-4 md:px-20 py-10 md:py-0 bg-gray-100 shadow-2xl min-h-screen flex items-center justify-center">
-            <div className="container">
+        <section className="select-none bg-gray-100 shadow-2xl flex items-center justify-center">
+            <div >
                 <div className="mb-8 text-center">
                     <h2 className="text-3xl font-bold py-4">Meine Dienstleistungen</h2>
                     <p className="text-xl md:w-8/12 mx-auto text-slate-700">Ich biete eine Reihe von Services an, die auf modernen Technologien basieren und optimal auf deine Anforderungen abgestimmt sind.</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {Services.map((service, index) => (
                         <div key={index} className={`service-item p-6 bg-white rounded-lg shadow-md transition-transform transform hover:translate-y-[-10px] hover:shadow-lg ${service.hoverEffekt}`}>
                             <div className="text-4xl mb-5 ">{service.icon}</div>

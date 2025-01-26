@@ -21,8 +21,8 @@ export default function ContactSec() {
     }, [ ]);
 
     return (
-        <section className="bg-gray-100 py-20 md:px-20 shadow-2xl select-none">
-            <div className="container mx-auto">
+        <section className="bg-gray-100 shadow-2xl select-none">
+            <div className="mx-auto">
                 <div className='text-center mb-8'>
                     <h2 className="text-3xl font-bold py-4">Schreib mir</h2>
                     <p className='text-xl md:w-8/12 mx-auto text-slate-700'>

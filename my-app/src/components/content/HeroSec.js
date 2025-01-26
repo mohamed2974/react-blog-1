@@ -7,8 +7,8 @@ export default function HeroSec() {
 
     //* ######################### HEROSECTION WEB ######################### //
     return (
-        <div className="bg-[#282c34] text-white py-10 md:py-0 min-h-screen select-none flex items-center ">
-            <div className="container mx-auto px-6 text-center">
+        <section className="bg-[#282c34] text-white select-none flex items-center ">
+            <div className=" mx-auto text-center">
                 <h1 className="text-4xl font-bold mb-4 leading-tight">Schön, dass du hier bist!</h1>
                 <p className="text-slate-300 text-xl my-8 min-h-24 md:min-h-fit"><Typing /></p>
                 <div className='flex flex-col md:flex-row gap-y-4 md:gap-x-4 md:justify-center '>
@@ -20,7 +20,7 @@ export default function HeroSec() {
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

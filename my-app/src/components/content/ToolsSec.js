@@ -1,10 +1,15 @@
 import React from 'react';
-import { FaReact, FaNodeJs, FaDiscord, FaHtml5 } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaDiscord, FaHtml5,  } from 'react-icons/fa';
 import { SiMongodb, SiTailwindcss, SiExpress } from 'react-icons/si';
+import { FaJsSquare } from "react-icons/fa";
 
 import Wave from 'react-wavify'
 
 let tools = [
+    {
+        icon: <FaJsSquare className="text-6xl text-yellow-500 mx-auto" />,
+        name: 'JavaScript'
+    },
     {
         icon: <FaReact className="text-6xl text-blue-500 mx-auto" />,
         name: 'React'
@@ -37,11 +42,11 @@ let tools = [
 
 export default function ToolsSec() {
     return (
-        <section className="select-none overflow-hidden md:px-20 px-4 bg-gray-100 shadow-2xl text-center md:text-start py-10 md:py-0 min-h-screen flex justify-center items-center">
-            <div className='md:flex relative md:flex-row'>
-                <div className="z-10 md:w-2/3 ">
-                    <h2 className="text-3xl font-bold mb-8 md:text-6xl">Skills & Tech-Stack</h2>
-                    <p className='text-xl md:w-11/12 text-slate-700'>Ich arbeite mit einer Vielzahl von Technologien, um skalierbare und performante Anwendungen zu entwickeln.</p>
+        <section className="select-none overflow-hidden bg-gray-100 shadow-2xl text-center md:text-start flex justify-center items-center">
+            <div className='md:flex relative flex-col lg:flex-row w-full'>
+                <div className="z-10 md:w-full lg:w-2/3 text-center lg:text-start md:mb-6">
+                    <h2 className="text-3xl font-bold md:mb-8 mb-4 md:text-6xl">Skills & Tech-Stack</h2>
+                    <p className='text-xl lg:w-11/12 md:w-full text-slate-700'>Ich arbeite mit einer Vielzahl von Technologien, um skalierbare und performante Anwendungen zu entwickeln.</p>
                 </div>   
                 <div className="z-10 flex flex-wrap justify-center ">
                     {tools.map((tool, index) => (

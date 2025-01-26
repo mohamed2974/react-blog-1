@@ -1,9 +1,14 @@
+import InfosSec from "../components/content/InfosSec";
+import ProjectsSec from "../components/content/ProjectsSec";
+import ToolsSec from "../components/content/ToolsSec";
 
 export default function About(){
     return(
-        <div>
-            <h1>About</h1>
-        </div>
+        <>
+            <InfosSec />
+            <ToolsSec />
+            <ProjectsSec />
+        </>
     )
 }
 // Hier sind einige weitere Ideen, die du in den **„About Me“**-Bereich integrieren könntest, um deine Persönlichkeit, Erfahrungen und Fähigkeiten noch vielfältiger zu präsentieren:

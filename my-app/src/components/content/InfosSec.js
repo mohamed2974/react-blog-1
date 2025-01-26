@@ -8,7 +8,7 @@ export default function InfosSec({towButtons}) {
         towButtons = true
     }
     return (
-        <div className="overflow-hidden md:px-20 px-4 select-none bg-gray-100 rounded-lg shadow-2xl text-center py-10 md:py-0 h-screen flex items-center justify-between">
+        <section className="overflow-hidden select-none bg-gray-100 rounded-lg shadow-2xl text-center flex items-center justify-between">
             <div className='w-full md:w-3/5 z-10'>
                 <div className='text-start'>
                     <h2 className="font-bold mb-4 text-6xl">Über mich</h2>
@@ -19,9 +19,9 @@ export default function InfosSec({towButtons}) {
                 <Buttons towButtons={towButtons}/>
             </div>
             <div className=' md:w-2/5 relative  '>
-                <FaRegFaceSmileBeam className='absolute md:static -translate-x-1/2 -translate-y-1/2 md:translate-x-0 md:translate-y-0 text-[660px] text-slate-700 mx-auto rotate-[20deg] opacity-10 md:opacity-25' />
+                <FaRegFaceSmileBeam className='absolute md:static -translate-x-1/2 -translate-y-1/2 md:translate-x-0 md:translate-y-0 text-[600px] text-slate-700 mx-auto rotate-[20deg] opacity-10 md:opacity-25' />
             </div>
-        </div>
+        </section>
     );
 };
 

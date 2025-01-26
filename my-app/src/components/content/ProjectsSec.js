@@ -13,8 +13,8 @@ const projects = [
 
 export default function ProjectsSec() {
     return (
-        <section className="select-none bg-gray-100 px-4 md:px-20 shadow-2xl flex justify-center items-center min-h-screen py-10 md:py-16">
-            <div className="container">
+        <section className="select-none bg-gray-100 shadow-2xl flex justify-center items-center">
+            <div>
                 <div className='mb-8 text-center'>
                     <h2 className="text-3xl font-bold py-4">Meine Projekte</h2>
                     <p className='text-xl md:w-8/12 mx-auto text-slate-700'>Eine Auswahl meiner bisherigen Arbeiten. Klicke auf die Links, um mehr zu erfahren!</p>
@@ -48,10 +48,10 @@ function Projects(){
     )
 }
 
-//supcom ######################### PROJEKTS ######################### //
+//supcom ######################### NO PROJEKTS ######################### //
 function NoProjects() {
     return (
-        <div className="flex justify-center items-center text-center py-32 bg-blue-50 border border-blue-200 rounded-lg shadow-lg">
+        <div className="flex justify-center items-center text-center py-32 px-10 bg-blue-50 border border-blue-200 rounded-lg shadow-lg">
             <div className="space-y-4">
                 <div className="text-4xl font-semibold text-gray-800">🚧</div> {/* Beispiel-Icon */}
                 <p className="text-xl text-gray-700 font-medium">

@@ -1,8 +1,11 @@
+import ContactSec from "../components/content/ContactSec";
+import Newsletter from "../components/content/NewsletterSec";
 
 export default function Contact(){
     return(
-        <section>
-            
-        </section>
+        <>
+            <ContactSec />
+            <Newsletter />
+        </>
     )
 }

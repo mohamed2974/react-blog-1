@@ -1,7 +1,7 @@
 import { HandRaisedIcon } from '@heroicons/react/24/outline'
 import { RiDiscountPercentLine } from "react-icons/ri";
 
-export default function Example() {
+export default function Newsletter() {
     return (
         <div className="select-none relative isolate overflow-hidden bg-gray-800 py-16 sm:py-24 lg:py-16">
             <div className="mx-auto max-w-7xl px-4 md:px-20">
