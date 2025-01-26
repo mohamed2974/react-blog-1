@@ -24,3 +24,21 @@ li, button, a {
   cursor: pointer;
 }
 
+section {
+  min-height: 95vh;
+  padding: 48px 24px;
+}
+
+@media (width >= 48rem) { /* entspricht 'md' */
+  section {
+    min-height: 75vh;
+    padding: 48px 50px;
+  }
+}
+
+@media (width >= 64rem) { /* entspricht 'lg' */
+  section {
+    min-height: 95vh;
+    padding: 64px 50px;
+  }
+}
