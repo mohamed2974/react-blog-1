@@ -6,7 +6,7 @@ export default function Uls({array, row, style, listItemStyle}){
         return(
             <ul className={`flex flex-row-reverse ${style}`}>
             {array.map((item, index) => (
-                <li key={index} className={`capitalize ${listItemStyle}`}>{item}</li>
+                <li key={index} className={` ${listItemStyle}`}>{item}</li>
             ))}
             </ul>
         )
