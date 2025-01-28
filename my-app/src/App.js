@@ -1,14 +1,19 @@
+// meine komponente
 import Header from './components/app/Header'
 import Footer from './components/app/Footer'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Service from './pages/Service';
 import Contact from './pages/Contact';
-
-import { SpeedInsights } from '@vercel/speed-insights/react';
-
+// globals
 import owner from "./global/owner"
+
+// router
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// vercel
+import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from "@vercel/analytics/react"
 
 
 // let theme_color_1 = {
@@ -23,6 +28,7 @@ function App() {
   return (
     <div className="font-sans">
       <SpeedInsights />
+      <Analytics />
       <Router>
         <Header />
         <Routes>
