@@ -13,7 +13,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // vercel
 import { SpeedInsights } from '@vercel/speed-insights/react';
-import { Analytics } from "@vercel/analytics/react"
 
 
 // let theme_color_1 = {
@@ -28,7 +27,6 @@ function App() {
   return (
     <div className="font-sans">
       <SpeedInsights />
-      <Analytics />
       <Router>
         <Header />
         <Routes>
