@@ -29,59 +29,65 @@ export default function ContactSec() {
                     Hast du Fragen, Anregungen oder möchtest mit mir zusammenarbeiten? Fülle einfach das Formular aus, und ich melde mich schnellstmöglich bei dir!
                     </p>
                 </div>
-                <form className=" mx-auto bg-white p-8 rounded-lg shadow-md flex flex-col md:flex-row justify-between flex-wrap">
-                    <div className='w-full md:w-[40%]' >
-                        <div className="mb-4">
-                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-                            Name
-                            </label>
-                            <input
-                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="name"
-                                type="text"
-                                placeholder="Dein Vor- und Nachname"
-                                required
-                                minLength={3}
-                            />
-                        </div>
-                        <div className="mb-4">
-                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                            E-Mail-Adresse
-                            </label>
-                            <input
-                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="email"
-                                type="email"
-                                placeholder="deinname@email.de"
-                                required
-                            />
-                        </div>
-                    </div>
-                    <div className="mb-6 w-full md:w-[60%] md:pl-4">
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
-                        Nachricht
-                        </label>
-                        <textarea
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline max-h-screen"
-                            id="message"
-                            rows="10"
-                            placeholder="Deine Nachricht..."
-                            required
-                            minLength={20}
-                        ></textarea>
-                    </div>
-                    <div className='flex justify-center w-full'>
-                        <button
-                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                            type="submit"
-                        >
-                            Nachricht senden
-                        </button>
-                    </div>
-                </form>
+                <Form />
             </div>
         </section>
     );
 };
 
 
+//supcom ######################### ######################### //
+function Form(){
+    return (
+        <form className=" mx-auto bg-white p-8 rounded-lg shadow-md flex flex-col md:flex-row justify-between flex-wrap">
+            <div className='w-full md:w-[40%]' >
+                <div className="mb-4">
+                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+                    Name
+                    </label>
+                    <input
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="name"
+                        type="text"
+                        placeholder="Dein Vor- und Nachname"
+                        required
+                        minLength={3}
+                    />
+                </div>
+                <div className="mb-4">
+                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+                    E-Mail-Adresse
+                    </label>
+                    <input
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="email"
+                        type="email"
+                        placeholder="deinname@email.de"
+                        required
+                    />
+                </div>
+            </div>
+            <div className="mb-6 w-full md:w-[60%] md:pl-4">
+                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+                Nachricht
+                </label>
+                <textarea
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline max-h-screen"
+                    id="message"
+                    rows="10"
+                    placeholder="Deine Nachricht..."
+                    required
+                    minLength={20}
+                ></textarea>
+            </div>
+            <div className='flex justify-center w-full'>
+                <button
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="submit"
+                >
+                    Nachricht senden
+                </button>
+            </div>
+        </form>
+    )
+}
