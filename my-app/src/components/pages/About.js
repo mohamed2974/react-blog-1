@@ -1,4 +1,5 @@
 import InfosSec from "../content/InfosSec";
+import PersonalFAQ from "../content/PersonalFAQ";
 import ProjectsSec from "../content/ProjectsSec";
 import SubHeroSec from "../content/SubHeroSec";
 import ToolsSec from "../content/ToolsSec";
@@ -8,14 +9,17 @@ export default function About(){
         <>
             <SubHeroSec titel="Ein kleiner Einblick" description="Wer ich bin und was ich mache – erfährst du auf dieser Seite." />
             <InfosSec towButtons={false}/>
+            <PersonalFAQ />
             <ToolsSec />
-            <ProjectsSec />
         </>
     )
 }
 
 
+/*
+hardskils / softskils
 
+*/
 //// ### 1. **Meine Philosophie als Entwickler**  
 //// Teile deine Grundsätze oder deinen Ansatz zur Softwareentwicklung. Zum Beispiel:  
 //// „Ich glaube an sauberen Code und nachhaltige Lösungen, die langfristig funktionieren. Meine Projekte konzentrieren sich darauf, sowohl Benutzerfreundlichkeit als auch Performance zu gewährleisten.“
