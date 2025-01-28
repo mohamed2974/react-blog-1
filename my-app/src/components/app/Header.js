@@ -39,10 +39,9 @@ export default function Header(){
     }
     //* ######################### HEADER WEB ######################### //
     return(
-        <header className='flex flex-row justify-between font-medium items-center select-none px-4 py-3 w-full md:w-[95%] lg:w-11/12 fixed md:px-11 md:mt-3 md:left-1/2 md:transform md:-translate-x-1/2 md:rounded-full' style={{
+        <header className='text-white flex flex-row justify-between font-medium items-center select-none px-4 py-3 w-full md:w-[95%] lg:w-11/12 fixed md:px-11 md:mt-3 md:left-1/2 md:transform md:-translate-x-1/2 md:rounded-full' style={{
             backgroundColor: '#282c34',
             boxShadow: 'rgba(97, 218, 251, 0.1) 0px 0px 20px 2px',
-            color: 'rgb(255, 255, 255)',
             zIndex: 100
             }}>
             {/*######################### logo #########################*/}
