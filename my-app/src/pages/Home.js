@@ -32,11 +32,9 @@ export default function Home(){
         <>
             <HeroSec />
             <InfosSec />
-            <ToolsSec />
             <ServicesSec />
             <ProjectsSec />
             <Newsletter />
-            <ContactSec />
         </>
     )
 }

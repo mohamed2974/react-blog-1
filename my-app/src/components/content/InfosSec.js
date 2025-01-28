@@ -3,13 +3,10 @@ import { MdFileDownload } from "react-icons/md";
 import { MdInfoOutline } from "react-icons/md";
 import { FaRegFaceSmileBeam } from "react-icons/fa6";
 
-export default function InfosSec({towButtons}) {
-    if(towButtons === undefined){
-        towButtons = true
-    }
+export default function InfosSec({towButtons = true}) {
     return (
         <section className="overflow-hidden select-none bg-gray-100 rounded-lg shadow-2xl text-center flex items-center justify-between">
-            <div className='w-full md:w-3/5 z-10'>
+            <div className='w-full md:w-3/5 z-10 relative'>
                 <div className='text-start'>
                     <h2 className="font-bold mb-4 text-6xl">Über mich</h2>
                     <p className="text-lg mb-6 text-slate-700">
