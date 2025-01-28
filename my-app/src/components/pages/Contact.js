@@ -1,6 +1,6 @@
-import ContactSec from "../components/content/ContactSec";
-import Newsletter from "../components/content/NewsletterSec";
-import SubHeroSec from "../components/content/SubHeroSec";
+import ContactSec from "../content/ContactSec";
+import Newsletter from "../content/NewsletterSec";
+import SubHeroSec from "../content/SubHeroSec";
 
 export default function Contact(){
     return(

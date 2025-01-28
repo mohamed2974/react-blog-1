@@ -3,6 +3,8 @@ import { MdFileDownload } from "react-icons/md";
 import { MdInfoOutline } from "react-icons/md";
 import { FaRegFaceSmileBeam } from "react-icons/fa6";
 
+import { NavLink } from 'react-router-dom';
+
 export default function InfosSec({towButtons = true}) {
     return (
         <section className="overflow-hidden select-none bg-gray-100 rounded-lg shadow-2xl text-center flex items-center justify-between">
@@ -28,12 +30,14 @@ function Buttons({towButtons}){
         <div className='flex md:flex-row flex-col w-full justify-start'>
             {towButtons === true ?
             <button className="relative w-full md:w-fit mb-4 md:mb-0 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 md:mr-4 flex items-center justify-center space-x-2">
-                <span class="absolute flex h-3 w-3 -right-1.5 -top-1.5">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-3 w-3 bg-red-400"></span>
-                </span>
-                <MdInfoOutline className="inline" />
-                <span>Mehr erfahren</span>
+                <NavLink  to='/about'>
+                    <span class="absolute flex h-3 w-3 -right-1.5 -top-1.5">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-red-400"></span>
+                    </span>
+                    <MdInfoOutline className="inline" />
+                    <span>Mehr erfahren</span>
+                </NavLink>
             </button> 
             : null
             }

@@ -1,7 +1,7 @@
-import InfosSec from "../components/content/InfosSec";
-import ProjectsSec from "../components/content/ProjectsSec";
-import SubHeroSec from "../components/content/SubHeroSec";
-import ToolsSec from "../components/content/ToolsSec";
+import InfosSec from "../content/InfosSec";
+import ProjectsSec from "../content/ProjectsSec";
+import SubHeroSec from "../content/SubHeroSec";
+import ToolsSec from "../content/ToolsSec";
 
 export default function About(){
     return(

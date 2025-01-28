@@ -1,10 +1,11 @@
 // meine komponente
 import Header from './components/app/Header'
 import Footer from './components/app/Footer'
-import Home from './pages/Home';
-import About from './pages/About';
-import Service from './pages/Service';
-import Contact from './pages/Contact';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Service from './components/pages/Service';
+import Contact from './components/pages/Contact';
+import ScrollToTop from './components/other/ScrollToTop';
 // globals
 import owner from "./global/owner"
 
@@ -28,6 +29,7 @@ function App() {
     <div className="font-sans">
       <SpeedInsights />
       <Router>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />

@@ -1,10 +1,10 @@
-import ServicesSec from "../components/content/ServicesSec"
-import Newsletter from "../components/content/NewsletterSec"
-import HeroSec from "../components/content/HeroSec"
-import InfosSec from "../components/content/InfosSec"
-import ToolsSec from "../components/content/ToolsSec"
-import ProjectsSec from "../components/content/ProjectsSec"
-import ContactSec from "../components/content/ContactSec"
+import ServicesSec from "../content/ServicesSec"
+import Newsletter from "../content/NewsletterSec"
+import HeroSec from "../content/HeroSec"
+import InfosSec from "../content/InfosSec"
+import ToolsSec from "../content/ToolsSec"
+import ProjectsSec from "../content/ProjectsSec"
+import ContactSec from "../content/ContactSec"
 
 import { Capacitor } from '@capacitor/core';
 

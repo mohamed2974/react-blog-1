@@ -1,6 +1,6 @@
-import ServicesSec from "../components/content/ServicesSec";
-import SubHeroSec from "../components/content/SubHeroSec";
-import ToolsSec from "../components/content/ToolsSec";
+import ServicesSec from "../content/ServicesSec";
+import SubHeroSec from "../content/SubHeroSec";
+import ToolsSec from "../content/ToolsSec";
 
 export default function Service(){
     return(
