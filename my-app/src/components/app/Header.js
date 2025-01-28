@@ -7,36 +7,24 @@ import { Capacitor } from '@capacitor/core';
 import Wave from 'react-wavify'
 import Status from '../other/Status';
 
-
-
-let hoverEffectNavList = 'relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-left hover:after:scale-x-100 after:transition-transform after:duration-300'
-
 export default function Header(){
+    const hoverEffectNavList = 'relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-left hover:after:scale-x-100 after:transition-transform after:duration-300'
+    const activeNavList = 'after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-100';  // Stil für den aktiven Link
+    
     const isMobileApp = Capacitor.isNativePlatform();
 
     let list = [
-        <NavLink  to='/'>Startseite</NavLink>, 
-        <NavLink  to='/service'>Leistungen</NavLink>, 
-        <NavLink  to='/about'>Über mich</NavLink>, 
-        <NavLink  to='/contact'>Kontaktieren</NavLink>
+        <NavLink  to='/'  className={({ isActive }) => isActive && activeNavList}>Startseite</NavLink>, 
+        <NavLink  to='/service' className={({ isActive }) => isActive && activeNavList}>Leistungen</NavLink>, 
+        <NavLink  to='/about' className={({ isActive }) => isActive && activeNavList}>Über mich</NavLink>, 
+        <NavLink  to='/contact' className={({ isActive }) => isActive && activeNavList}>Kontaktieren</NavLink>
     ]
     
-    //mobile ######################### HEROSECTION MOBILE ######################### //
+    //mobile ################################################## //
     if (isMobileApp) {
-        return(
-            <div className='select-none px-7 py-4  flex flex-col h-screen relative overflow-hidden' style={{
-                backgroundColor: '#282c34',
-                color: 'rgb(255, 255, 255)',
-            }}>
-                <div className='flex flex-row justify-between font-medium items-center select-none absolute left-0 w-full px-7 pb-4 z-30'>
-                    <h1 className='text-xl'>Logo</h1>
-                    <MobileNav array={list}/>
-                </div>
-                <HeroSec />
-                <Waves />
-            </div>
-        )
+        return <MobileHeader />
     }
+
     //* ######################### HEADER WEB ######################### //
     return(
         <header className='text-white flex flex-row justify-between font-medium items-center select-none px-4 py-3 w-full md:w-[95%] lg:w-11/12 fixed md:px-11 md:mt-3 md:left-1/2 md:transform md:-translate-x-1/2 md:rounded-full' style={{
@@ -72,6 +60,22 @@ export default function Header(){
     )
 }
 
+//mobile ######################### MOBILE HEADER ######################### //
+function MobileHeader(){
+    return(
+        <div className='select-none px-7 py-4  flex flex-col h-screen relative overflow-hidden' style={{
+            backgroundColor: '#282c34',
+            color: 'rgb(255, 255, 255)',
+        }}>
+            <div className='flex flex-row justify-between font-medium items-center select-none absolute left-0 w-full px-7 pb-4 z-30'>
+                <h1 className='text-xl'>Logo</h1>
+                <MobileNav array={list}/>
+            </div>
+            <HeroSec />
+            <Waves />
+        </div>
+    )
+}
 
 //supcom ######################### WAVES COMPONENT ######################### //
 function Waves(){

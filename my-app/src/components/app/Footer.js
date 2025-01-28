@@ -27,7 +27,7 @@ export default function Footer({owner}) {
         {/*######################### navigation #########################*/}
         <Uls listItemStyle={`text-slate-400 mt-2 w-fit ${hoverEffectFooterLists}`} style={'flex justify-between md:justify-around flex-wrap gap-7 mb-11'} array={lists}/>
         {/*######################### social media #########################*/}
-        <SocialMedia style={'flex flex-row justify-center mb-11'} imgStyle={'mx-4'}/>
+        <SocialMedia style={'flex flex-row justify-center mb-11'}/>
         {/*######################### copyright #########################*/}
         <div className="flex justify-center text-sm py-3">
             <span>&copy; {new Date().getFullYear()} {owner}</span>
