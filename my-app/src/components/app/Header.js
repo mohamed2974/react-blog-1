@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 import { Capacitor } from '@capacitor/core';
 import Wave from 'react-wavify'
 import Status from '../other/Status';
+import { useEffect } from 'react';
 
 export default function Header(){
     const hoverEffectNavList = 'relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 after:origin-left hover:after:scale-x-100 after:transition-transform after:duration-300'
@@ -17,7 +18,8 @@ export default function Header(){
         <NavLink  to='/'  className={({ isActive }) => isActive && activeNavList}>Startseite</NavLink>, 
         <NavLink  to='/service' className={({ isActive }) => isActive && activeNavList}>Leistungen</NavLink>, 
         <NavLink  to='/about' className={({ isActive }) => isActive && activeNavList}>Über mich</NavLink>, 
-        <NavLink  to='/contact' className={({ isActive }) => isActive && activeNavList}>Kontaktieren</NavLink>
+        <NavLink  to='/contact' className={({ isActive }) => isActive && activeNavList}>Kontaktieren</NavLink>,
+        <div><Status status='Bald'>Einloggen</Status></div>
     ]
     
     //mobile ################################################## //
@@ -40,20 +42,13 @@ export default function Header(){
                 </h1>
             </div>
             {/*######################### navigation #########################*/}
-            <Uls style={'hidden justify-between md:flex min-w-fit'} listItemStyle={`${hoverEffectNavList} py-1 mx-2 lg:mx-4 text-sm lg:text-base`} array={list} row={true}/>
+            <Uls style={'hidden justify-between md:flex min-w-fit'} listItemStyle={`${hoverEffectNavList} py-1 mx-2 lg:mx-4 text-sm lg:text-base`} array={list.slice(0,(list.length - 1))} row={true}/>
             <div className='flex justify-end w-fit '>
                 {/*######################### login #########################*/}
-                <Status className={'hidden md:flex'}>
-                    <a href='/' className='hidden w-fit md:flex items-center justify-between pointer-events-none cursor-not-allowed '>
-                        <span className='mx-2'>Einloggen</span> 
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5">
-                            <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
-                        </svg>
-                    </a>
-                </Status>
+                <Login />
                 {/*######################### sidebar #########################*/}
-                <div className='md:hidden'>
-                    <MobileNav array={list}/>        
+                <div className='md:hidden' id='mobilenav'>
+                    <MobileNav array={list} login={<Login />}/>        
                 </div>
             </div>
         </header>
@@ -121,5 +116,19 @@ function Waves(){
                 />
             </div>
         </div>
+    )
+}
+
+//supcom ######################### LOGIN ######################### //
+function Login(){
+    return(
+        <Status className={'hidden md:flex'}>
+            <a href='/' className='hidden w-fit md:flex items-center justify-between pointer-events-none cursor-not-allowed '>
+                <span className='mx-2'>Einloggen</span> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5">
+                    <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+                </svg>
+            </a>
+        </Status>
     )
 }

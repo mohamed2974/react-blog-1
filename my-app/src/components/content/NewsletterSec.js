@@ -3,8 +3,8 @@ import { RiDiscountPercentLine } from "react-icons/ri";
 
 export default function Newsletter() {
     return (
-        <div className="select-none relative isolate overflow-hidden bg-gray-800 py-16 sm:py-24 lg:py-16">
-            <div className="mx-auto max-w-7xl px-4 md:px-20">
+        <div className="select-none relative isolate overflow-hidden bg-[#282c34] py-16 sm:py-24 lg:py-16">
+            <div className="mx-auto max-w-7xl px-6 md:px-20">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                     <div className="max-w-xl lg:max-w-lg">
                         <h2 className="text-4xl font-semibold tracking-tight text-white">Abonniere unseren Newsletter</h2>
@@ -60,7 +60,7 @@ export default function Newsletter() {
                     clipPath:
                     'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
                 }}
-                className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+                className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#facc15] to-[#14b8a6] opacity-20"
                 />
             </div>
         </div>

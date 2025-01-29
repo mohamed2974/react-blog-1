@@ -31,7 +31,7 @@ section {
 
 @media (width >= 48rem) { /* entspricht 'md' */
   section {
-    min-height: 75vh;
+    min-height: 70vh;
     padding: 48px 50px;
   }
 }

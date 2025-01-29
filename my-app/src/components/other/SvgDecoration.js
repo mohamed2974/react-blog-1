@@ -21,8 +21,8 @@ export default function BackgroundDecorator ({ svgType = "wave", color = "#6C63F
         ),
         circles: (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style={svgStyles}>
-            <circle cx="150" cy="150" r="150" fill={color} />
-            <circle cx="500" cy="100" r="100" fill={color} fillOpacity="0.7" />
+            <circle cx="0" cy="-50%" r="300" fill={color} />
+            <circle cx="500" cy="150%" r="100" fill={color} fillOpacity="0.7" />
             <circle cx="900" cy="200" r="200" fill={color} fillOpacity="0.5" />
         </svg>
         ),

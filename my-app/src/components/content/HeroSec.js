@@ -13,10 +13,10 @@ export default function HeroSec() {
                 <h1 className="text-4xl font-bold mb-4 leading-tight">Schön, dass du hier bist!</h1>
                 <p className="text-slate-300 text-xl my-8 min-h-24 md:min-h-fit"><Typing /></p>
                 <div className='flex flex-col md:flex-row gap-y-4 md:gap-x-4 md:justify-center '>
-                    <button className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-bold py-3 px-6 rounded shadow-lg">
+                    <button className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 px-6 rounded shadow-lg">
                         Jetzt entdecken
                     </button>
-                    <button className="text-blue-500 hover:text-blue-700 border border-blue-500 font-bold py-2 px-4 rounded hover:bg-blue-100 hover:border-none transition-all duration-300">
+                    <button className="text-blue-500 hover:text-blue-700 border border-blue-500 font-bold py-2 px-4 rounded hover:bg-blue-100 hover:border-blue-100 transition-all duration-300">
                         Mehr über mich
                     </button>
                 </div>

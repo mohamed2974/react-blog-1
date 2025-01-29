@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function InfosSec({towButtons = true}) {
     return (
-        <section className="overflow-hidden select-none bg-gray-100 rounded-lg shadow-2xl text-center flex items-center justify-between">
+        <section className="overflow-hidden select-none bg-gray-100 shadow-2xl text-center flex items-center justify-between py-0 lg:h-[60vh]">
             <div className='w-full md:w-3/5 z-10 relative'>
                 <div className='text-start'>
                     <h2 className="font-bold mb-4 text-6xl">Über mich</h2>

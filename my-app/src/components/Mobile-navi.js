@@ -11,7 +11,7 @@ import Menu from '@mui/icons-material/Menu';
 import Search from '@mui/icons-material/Search';
 
 
-export default function DrawerMobileNavigation({array}) {
+export default function DrawerMobileNavigation({array = []}) {
     const [open, setOpen] = React.useState(false);
 
     const handleClose = () => {
