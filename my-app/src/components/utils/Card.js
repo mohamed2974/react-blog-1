@@ -1,5 +1,5 @@
 
-export default function Card({titel = '', description = '', links = [{name: 'hier', link:'', linkTarget: '_self'}], img, icon, className = '', }){
+export default function Card({titel = '', description = '', links = [{name: '', link:'', linkTarget: '_self'}], img, icon, className = '', }){
     return(
         <div className={`bg-white rounded-lg shadow-md overflow-hidden transition transform hover:shadow-lg hover:translate-y-[-10px] p-6 ${className}`}>
             {img ? <img src={img} className="w-full h-48 object-cover" alt="image"/>: <div className="text-4xl mb-5">{icon}</div>}

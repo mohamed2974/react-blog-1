@@ -1,6 +1,7 @@
 import { BiBot } from "react-icons/bi";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { FaServer } from "react-icons/fa6";
+import Card from "../utils/Card";
 
 const Services = [
     {
@@ -39,11 +40,7 @@ export default function ServicesSec(){
                 {/* leistungen */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {Services.map((service, index) => (
-                        <div key={index} className={`p-6 bg-white rounded-lg shadow-md transition-transform transform hover:translate-y-[-10px] hover:shadow-lg ${service.hoverEffekt}`}>
-                            <div className="text-4xl mb-5 ">{service.icon}</div>
-                            <h3 className="text-xl font-semibold mb-6">{service.title}</h3>
-                            <p className="text-gray-600">{service.description}</p>
-                        </div>
+                        <Card key={index} className={service.hoverEffekt} icon={service.icon} titel={service.title} description={service.description}/>
                     ))}
                 </div>
             </div>
