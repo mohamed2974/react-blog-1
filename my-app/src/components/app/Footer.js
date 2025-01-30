@@ -1,5 +1,5 @@
-import Uls from '../Uls-component'
-import SocialMedia from '../SocialMediaLinks'
+import Uls from '../utils/Uls-component'
+import SocialMedia from '../utils/SocialMediaLinks'
 import { Capacitor } from '@capacitor/core';
 
 const hoverEffectFooterLists = 'relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-slate-400 after:scale-x-0 after:origin-left hover:after:scale-x-100 after:transition-transform after:duration-300'

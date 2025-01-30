@@ -1,4 +1,4 @@
-import Uls from '../Uls-component'
+import Uls from '../utils/Uls-component'
 import MobileNav from '../Mobile-navi'
 import HeroSec from '../content/HeroSec';
 

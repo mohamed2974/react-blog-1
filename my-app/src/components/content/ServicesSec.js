@@ -31,13 +31,15 @@ export default function ServicesSec(){
     return (
         <section className="select-none bg-gray-100 shadow-2xl flex items-center justify-center">
             <div >
+                {/* überschrift und beschreibung */}
                 <div className="mb-8 text-center">
                     <h2 className="text-3xl font-bold py-4">Meine Dienstleistungen</h2>
                     <p className="text-xl md:w-8/12 mx-auto text-slate-700">Ich biete eine Reihe von Services an, die auf modernen Technologien basieren und optimal auf deine Anforderungen abgestimmt sind.</p>
                 </div>
+                {/* leistungen */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {Services.map((service, index) => (
-                        <div key={index} className={`service-item p-6 bg-white rounded-lg shadow-md transition-transform transform hover:translate-y-[-10px] hover:shadow-lg ${service.hoverEffekt}`}>
+                        <div key={index} className={`p-6 bg-white rounded-lg shadow-md transition-transform transform hover:translate-y-[-10px] hover:shadow-lg ${service.hoverEffekt}`}>
                             <div className="text-4xl mb-5 ">{service.icon}</div>
                             <h3 className="text-xl font-semibold mb-6">{service.title}</h3>
                             <p className="text-gray-600">{service.description}</p>
