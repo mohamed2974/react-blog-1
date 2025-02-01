@@ -39,7 +39,7 @@ function Projects(){
         <Card img={project.imageUrl} titel={project.title} description={project.description} links={[
             {name: 'Live Demo', link: `${project.demoLink}`, linkTarget: '_blank'},
             {name: 'GitHub', link: `${project.repoLink}`, linkTarget: '_blank'}
-        ]}/>
+        ]} className='transition transform hover:shadow-lg hover:translate-y-[-10px]'/>
     ))
     )
 }

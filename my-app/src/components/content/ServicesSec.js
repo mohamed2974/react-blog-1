@@ -40,7 +40,7 @@ export default function ServicesSec(){
                 {/* leistungen */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {Services.map((service, index) => (
-                        <Card key={index} className={service.hoverEffekt} icon={service.icon} titel={service.title} description={service.description}/>
+                        <Card key={index} className={`${service.hoverEffekt} transition transform hover:shadow-lg hover:translate-y-[-10px]`} icon={service.icon} titel={service.title} description={service.description}/>
                     ))}
                 </div>
             </div>

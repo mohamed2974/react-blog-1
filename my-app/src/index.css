@@ -27,12 +27,14 @@ li, button, a {
 section {
   min-height: 95vh;
   padding: 48px 24px;
+  position: relative;            /*!################# könnte fehler verursachen */ 
 }
 
 @media (width >= 48rem) { /* entspricht 'md' */
   section {
     min-height: 70vh;
     padding: 48px 50px;
+    position: relative;            /*!################# könnte fehler verursachen */ 
   }
 }
 
@@ -40,5 +42,6 @@ section {
   section {
     min-height: 95vh;
     padding: 64px 50px;
+    position: relative;            /*!################# könnte fehler verursachen */ 
   }
 }
