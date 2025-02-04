@@ -1,5 +1,5 @@
 import Uls from '../utils/Uls-component'
-import MobileNav from '../Mobile-navi'
+import MobileNav from '../utils/Mobile-navi'
 import HeroSec from '../content/HeroSec';
 
 import { NavLink } from 'react-router-dom';
