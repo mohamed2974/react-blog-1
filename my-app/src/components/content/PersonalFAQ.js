@@ -104,22 +104,3 @@ function ButtonsSec({activeIndex, handleClick}){
         </>
     ) 
 }
-
-
-/**
-1. „Meine Mission als Entwickler“
-Erkläre, was du mit deiner Arbeit erreichen möchtest. Was ist deine langfristige Vision als Entwickler? Möchtest du Probleme lösen, Innovationen vorantreiben oder der Gemeinschaft etwas zurückgeben?
-Beispiel: „Meine Mission ist es, innovative Webanwendungen zu erstellen, die nicht nur funktional, sondern auch benutzerfreundlich und nachhaltig sind.“
-
-3. „Mein Weg zum Programmieren“
-Beschreibe, wie du den Weg zur Softwareentwicklung gefunden hast, welche Herausforderungen du überwinden musstest und was dich dazu inspiriert hat, diesen Beruf zu ergreifen.
-Beispiel: „Mein Weg in die Softwareentwicklung begann, als ich in meiner Freizeit kleine Projekte entwickelte und meine Leidenschaft für Technologie entdeckte. Heute bin ich stolz darauf, professionell als Entwickler zu arbeiten.“
-
-5. „Meine Werte als Entwickler“
-Was sind deine ethischen Grundsätze als Entwickler? Welche Prinzipien sind dir wichtig in deiner Arbeit und deinem Umgang mit anderen?
-Beispiel: „Integrität, Zusammenarbeit und kontinuierliches Lernen sind für mich die Grundlage für jedes erfolgreiche Projekt. Ich glaube, dass guter Code nicht nur effektiv sein sollte, sondern auch transparent und nachvollziehbar.“
-
-7. „Zukünftige Ziele und Ambitionen“
-Erkläre, was du dir für deine Zukunft als Entwickler vornimmst. Welche Technologien möchtest du noch beherrschen? Was sind deine beruflichen Ziele?
-Beispiel: „In Zukunft möchte ich mich weiter auf den Bereich Künstliche Intelligenz und maschinelles Lernen spezialisieren, um intelligente Anwendungen zu entwickeln, die das tägliche Leben der Menschen verbessern.“
-*/
