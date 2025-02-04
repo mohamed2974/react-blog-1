@@ -1,7 +1,7 @@
 
 export default function SubHeroSec({ titel = '', description = '' }) {
     return (
-        <div className="relative pt-8 lg:pt-0 min-h-[45vh] lg:h-[50vh] flex flex-col items-center justify-center bg-[#282c34] text-white px-6">
+        <div className="relative pt-8 lg:pt-0 min-h-[40vh] lg:h-[50vh] flex flex-col items-center justify-center bg-[#282c34] text-white px-6">
             {/* Dekoratives Element */}
             <div className="absolute top-0 left-0 w-full h-full opacity-10">
                 <Svg />
