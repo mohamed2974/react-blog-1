@@ -56,7 +56,7 @@ export default function ToolsSec() {
                         </div>
                     ))}
                 </div>
-                <div className='hidden xl:inline 2xl:hidden absolute bottom-0 left-0 w-11/12 h-[150%] transform -translate-x-[40%] translate-y-3/4 rotate-[30deg]'>
+                <div className='hidden md:inline absolute bottom-0 md:left-[-10%] w-[2000px] h-[150%] transform -translate-x-[40%] translate-y-3/4 rotate-[30deg]'>
                     <Waves />
                 </div>
             </div>
