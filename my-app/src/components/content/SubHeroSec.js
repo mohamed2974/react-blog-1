@@ -8,10 +8,10 @@ export default function SubHeroSec({ titel = '', description = '' }) {
             </div>
             {/* Inhalt */}
             <div className="z-10 text-center">
-                <h1 className="text-5xl md:text-6xl font-bold mb-4">
+                <h1 className="text-3xl md:text-5xl font-bold mb-4">
                     {titel}
                 </h1>
-                <p className="text-lg md:text-xl text-gray-300 mx-auto">
+                <p className="text-sm md:text-xl text-gray-300 mx-auto">
                     {description}
                 </p>
             </div>

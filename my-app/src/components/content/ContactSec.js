@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Status from '../other/Status'
 
 export default function ContactSec() {
      // useEffect für die Initialisierung des Sternchens
@@ -39,85 +40,87 @@ export default function ContactSec() {
 //supcom ######################### Form ######################### //
 function Form(){
     return (
-        <form onSubmit={handleSubmit} className=" mx-auto bg-white p-8 rounded-lg shadow-md flex flex-col md:flex-row justify-between flex-wrap">
-            <div className='w-full md:w-[40%]' >
-                <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-                    Name
-                    </label>
-                    <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="name"
-                        name="name"
-                        type="text"
-                        placeholder="Dein Vor- und Nachname"
-                        required
-                        minLength={3}
-                    />
+        <Status className='w-full'>
+            <form className=" w-full bg-white p-8 rounded-lg shadow-md flex flex-col md:flex-row justify-between flex-wrap">
+                <div className='w-full md:w-[40%]' >
+                    <div className="mb-4">
+                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+                        Name
+                        </label>
+                        <input
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="name"
+                            name="name"
+                            type="text"
+                            placeholder="Dein Vor- und Nachname"
+                            required
+                            minLength={3}
+                        />
+                    </div>
+                    <div className="mb-4">
+                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+                        E-Mail-Adresse
+                        </label>
+                        <input
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="deinname@email.de"
+                            required
+                        />
+                    </div>
+                    <div className="mb-4">
+                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="titel">
+                        Wie kann ich dir helfen?
+                        </label>
+                        <input
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="titel"
+                            name="titel"
+                            type='text'
+                            placeholder="Beschreibe dein Anliegen in wenigen Worten."
+                            required
+                        />
+                    </div>
+                    {/* <div className="mb-4">
+                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="handy">
+                            Handynummer
+                        </label>
+                        <input
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="handy"
+                            type="tel"
+                            placeholder="z. B. +49 170 1234567"
+                            required
+                            pattern="^\+?[0-9\s\-]{7,20}$"
+                            defaultValue="+49 "
+                        />
+                    </div> */}
                 </div>
-                <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                    E-Mail-Adresse
+                <div className="mb-6 w-full md:w-[60%] md:pl-4">
+                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+                    Nachricht
                     </label>
-                    <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="deinname@email.de"
+                    <textarea
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline max-h-screen"
+                        id="message"
+                        name='message'
+                        rows="10"
+                        placeholder="Deine Nachricht..."
                         required
-                    />
+                        minLength={20}
+                    ></textarea>
                 </div>
-                <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="titel">
-                    Wie kann ich dir helfen?
-                    </label>
-                    <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="titel"
-                        name="titel"
-                        type='text'
-                        placeholder="Beschreibe dein Anliegen in wenigen Worten."
-                        required
-                    />
+                <div className='flex justify-center w-full'>
+                    <button
+                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="submit"
+                    >
+                        Nachricht senden
+                    </button>
                 </div>
-                {/* <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="handy">
-                        Handynummer
-                    </label>
-                    <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="handy"
-                        type="tel"
-                        placeholder="z. B. +49 170 1234567"
-                        required
-                        pattern="^\+?[0-9\s\-]{7,20}$"
-                        defaultValue="+49 "
-                    />
-                </div> */}
-            </div>
-            <div className="mb-6 w-full md:w-[60%] md:pl-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
-                Nachricht
-                </label>
-                <textarea
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline max-h-screen"
-                    id="message"
-                    name='message'
-                    rows="10"
-                    placeholder="Deine Nachricht..."
-                    required
-                    minLength={20}
-                ></textarea>
-            </div>
-            <div className='flex justify-center w-full'>
-                <button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    type="submit"
-                >
-                    Nachricht senden
-                </button>
-            </div>
-        </form>
+            </form>
+        </Status>
     )
 }

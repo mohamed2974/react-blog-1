@@ -7,7 +7,7 @@ export default function HeroSec() {
 
     //* ######################### HEROSECTION WEB ######################### //
     return (
-        <section className="bg-[#282c34] text-white select-none flex items-center relative overflow-hidden">
+        <section className="bg-[#282c34] text-white select-none flex items-center relative overflow-hidden h-[90vh] md:h-auto">
             <Svg />
             <div className=" mx-auto text-center z-10">
                 <h1 className="text-4xl font-bold mb-4 leading-tight">Schön, dass du hier bist!</h1>
